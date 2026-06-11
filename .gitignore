@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Project scratch / output
+resolve_temp/
+*.srt
+*.wav
+*.mp3
+*.mp4
+*.mov
+
+# Whisper / HF model cache (if ever placed locally)
+.cache/
+models/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
