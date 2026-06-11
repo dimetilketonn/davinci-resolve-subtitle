@@ -20,9 +20,9 @@ import time
 # ============================================================
 # CONFIG - BURALARI KENDINE GORE DUZENLE
 # ============================================================
-PYTHON_EXE     = r"C:\Users\Enes\miniconda3\python.exe"   # transcribe.py'yi calistiran Python
-TRANSCRIBE_PY  = r"C:\Users\Enes\Documents\GitHub\youtube_transcribe\transcribe.py"
-WORK_DIR       = r"C:\Users\Enes\Documents\GitHub\youtube_transcribe\resolve_temp"
+PYTHON_EXE     = r"C:\Users\<you>\miniconda3\python.exe"   # transcribe.py'yi calistiran Python (faster-whisper'in kurulu oldugu Python)
+TRANSCRIBE_PY  = r"C:\path\to\this\repo\transcribe.py"     # transcribe.py'nin tam yolu
+WORK_DIR       = r"C:\path\to\this\repo\resolve_temp"      # gecici render/SRT klasoru (otomatik olusturulur)
 TRANSLATE      = "none"                                   # "none", "deepl" veya "claude"
 
 # Mod tespiti: "auto"  -> dikey timeline = shorts, yatay = normal (Netflix)
