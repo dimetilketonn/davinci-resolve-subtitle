@@ -13,6 +13,7 @@ Kurulum: Bu dosyayi su klasore koy:
 Asagidaki CONFIG bolumunu kendi yollarina gore duzenle.
 """
 
+import datetime
 import os
 import subprocess
 import time
@@ -133,6 +134,9 @@ def main():
     safe_name = "".join(c if c.isalnum() or c in "-_ " else "_" for c in tl_name).strip()
     if not safe_name:
         safe_name = "timeline_audio"
+    # Her calistirmaya benzersiz etiket: ayni isimli eski dosya/Media Pool ogesiyle
+    # cakismayi onler (Resolve ayni yolu tekrar import etmez, eski icerigi kullanir)
+    safe_name = safe_name + "_" + datetime.datetime.now().strftime("%H%M%S")
 
     os.makedirs(WORK_DIR, exist_ok=True)
 
